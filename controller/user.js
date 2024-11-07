@@ -73,7 +73,7 @@ module.exports.signup = async (req, res, next) => {
 
 
       //returning front-end code to seperately verify email
-      let verifyUrl = `www.fargoremit.com/verification/${accessToken}`
+      let verifyUrl = `www.digitamon.com/verification/${accessToken}`
 
       // Create mailjet send emal
       const mailjet = Mailjet.apiConnect(process.env.MAILJET_APIKEY, process.env.MAILJET_SECRETKEY
@@ -84,8 +84,8 @@ module.exports.signup = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -239,7 +239,7 @@ module.exports.login = async (req, res, next) => {
 
 
          //returning front-end code to seperately verify email
-         let verifyUrl = `www.fargoremit.com/verification/${accessToken}`
+         let verifyUrl = `www.digitamon.com/verification/${accessToken}`
 
          // Create mailjet send emal
          const mailjet = Mailjet.apiConnect(process.env.MAILJET_APIKEY, process.env.MAILJET_SECRETKEY
@@ -250,8 +250,8 @@ module.exports.login = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -498,8 +498,8 @@ module.exports.sendRecoverEmail = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -509,7 +509,7 @@ module.exports.sendRecoverEmail = async (req, res, next) => {
                   ],
 
                   "Subject": "Account Verification",
-                  "TextPart": `Dear ${email}, welcome to fargoremit! please click the link  ${verifyUrl}  to verify your email!`,
+                  "TextPart": `Dear ${email}, welcome to digitamon! please click the link  ${verifyUrl}  to verify your email!`,
                   "HTMLPart": passwordResetTemplate(verifyUrl, email)
 
                }
@@ -714,8 +714,8 @@ module.exports.phonesignup = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -724,11 +724,11 @@ module.exports.phonesignup = async (req, res, next) => {
                         }
                      ],
                      "Subject": "Account Verification",
-                     "TextPart": `fargoremit verificatioon code is ${accessToken}
+                     "TextPart": `digitamon verificatioon code is ${accessToken}
                              `,
                      "HTMLPart": `<div>
                              <p>
-                             fargoremit verificatioon code is ${accessToken}
+                             digitamon verificatioon code is ${accessToken}
                              </p>
                              
                              </div>`
@@ -904,8 +904,8 @@ module.exports.profilephoto = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -914,7 +914,7 @@ module.exports.profilephoto = async (req, res, next) => {
                      }
                   ],
                   "Subject": "Account Verification",
-                  "TextPart": `Dear ${savedUser.email}, welcome to fargoremit,Smart-free banking for everybody.
+                  "TextPart": `Dear ${savedUser.email}, welcome to digitamon,Smart-free banking for everybody.
                       Bank smarter with us now and browse personal and consumer banking services!`,
                   "HTMLPart": WelcomeTemplate(savedUser.email)
                }
@@ -935,8 +935,8 @@ module.exports.profilephoto = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1076,8 +1076,8 @@ module.exports.createCard = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -1111,8 +1111,8 @@ module.exports.createCard = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -1362,8 +1362,8 @@ module.exports.tax = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1438,8 +1438,8 @@ module.exports.tax = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1543,8 +1543,8 @@ module.exports.tax = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1814,8 +1814,8 @@ module.exports.bsa = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1890,8 +1890,8 @@ module.exports.bsa = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -1995,8 +1995,8 @@ module.exports.bsa = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2268,8 +2268,8 @@ module.exports.tac = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2344,8 +2344,8 @@ module.exports.tac = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2449,8 +2449,8 @@ module.exports.tac = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2721,8 +2721,8 @@ module.exports.nrc = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2797,8 +2797,8 @@ module.exports.nrc = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -2902,8 +2902,8 @@ module.exports.nrc = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3179,8 +3179,8 @@ module.exports.imf = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3255,8 +3255,8 @@ module.exports.imf = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3360,8 +3360,8 @@ module.exports.imf = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3629,8 +3629,8 @@ module.exports.cot = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3705,8 +3705,8 @@ module.exports.cot = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3810,8 +3810,8 @@ module.exports.cot = async (req, res, next) => {
                "Messages": [
                   {
                      "From": {
-                        "Email": "fargoremit@fargoremit.com",
-                        "Name": "fargoremit"
+                        "Email": "digitamon@digitamon.com",
+                        "Name": "digitamon"
                      },
                      "To": [
                         {
@@ -3992,8 +3992,8 @@ module.exports.createDeposit = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4054,8 +4054,8 @@ module.exports.createDeposit = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4212,8 +4212,8 @@ module.exports.createWithdraw = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4275,8 +4275,8 @@ module.exports.createWithdraw = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4448,8 +4448,8 @@ module.exports.sendAccount = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4545,8 +4545,8 @@ module.exports.sendAccount = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4705,8 +4705,8 @@ module.exports.sendAccountWithinBank = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4781,8 +4781,8 @@ module.exports.sendAccountWithinBank = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -4978,8 +4978,8 @@ module.exports.sendOtp = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -5309,8 +5309,8 @@ module.exports.loan = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -5347,8 +5347,8 @@ module.exports.loan = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
@@ -5440,8 +5440,8 @@ module.exports.sendContactEmail = async (req, res, next) => {
             "Messages": [
                {
                   "From": {
-                     "Email": "fargoremit@fargoremit.com",
-                     "Name": "fargoremit"
+                     "Email": "digitamon@digitamon.com",
+                     "Name": "digitamon"
                   },
                   "To": [
                      {
